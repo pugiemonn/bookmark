@@ -34,7 +34,7 @@ class UsersController extends AppController
     }
     //セッションにログイン情報を格納する
     $this->Session->write("auth", $data[0]['User']);
-    $this->flash("ログイン成功、{$data[0]['User']['name']}さん、ようこそ", "/bookmarks/");
+    $this->flash("ログイン成功、{$data[0]['User']['name']}さん、ようこそ", "/lists/");
   }
 
   function logout()
